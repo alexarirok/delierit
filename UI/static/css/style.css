@@ -1,0 +1,68 @@
+#{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: brown;
+    
+}
+
+#showcase{
+    background-image: url("../images/kk.png");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0, 20px;
+}
+
+#showcase h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    }
+
+#showcase p{
+    font-size:20px;
+}
+#showcase .button{
+    font-size: 18px;
+    text-decoration: none;
+    color: brown;
+    border: white 10px solid;
+    padding: 10px, 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#showcase .button:hover{
+    background: brown;
+    color: #fff;
+}
+
+#section-a {
+    padding: 20px;
+    background-color: rgb(45, 109, 165);
+    text-align:center;
+    color: #fff;
+}
+
+#section-c {
+    -webkit-column-count: 3; 
+  -moz-column-count: 3; 
+  column-count: 3;
+  display: flex;
+  -moz-column-width: 100px; 
+  column-width: 100px;
+  
+}
+
+.box-1{
+
+}
