@@ -1,4 +1,4 @@
-# delierit
+# Delierit Courier Service
 This is a courier delievery website for a company called Delierit Courier Service based in Mombasa.
 ## Project Description
 Delierit Courier Service company contracted mr. Alex Korir to develop them a website that will enable the customers access courier services with ease. 
