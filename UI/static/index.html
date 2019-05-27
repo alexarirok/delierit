@@ -23,8 +23,18 @@
                             <li><a href="index.html" class="active">Home</a></li>
                             <li><a href="#about">About Us</a></li>
                             <li><a href="login.html">login</a></li>
-                            <li><a href="order.html">My Order</a> </li> 
-                            <li><a href="cancelorder.html">Cancel Order</a></li>
+                            <li><div class="ddown">
+                                <button class="dbtn">My Order 
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="ddown-content">
+                                  <a href="order.html">Place order</a>
+                                  <a href="cancelorder.html">Cancel order</a>
+                                  <a href="admin_change_location.html">Check order status</a>
+                                  <a href="status.html">Change destination</a>
+                                </div>
+                              </div> </li> 
+                            
                             <li><a href="contact">Contact Us</a></li>
                         </ul>
                     </nav>
@@ -241,5 +251,15 @@
                                       </div>
                                     </div>
                                   </footer>
+  <script>
+    function myFunction() {
+     var x = document.getElementById("myTp");
+     if (x.className === "tp") {
+     x.className += " responsive";
+     } else {
+     x.className = "tp";
+     }
+     }
+  </script>
     </body>
 </html>

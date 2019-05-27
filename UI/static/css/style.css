@@ -726,3 +726,108 @@ table#t01 th {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #1E90FF;}
+
+
+/*drop down */
+.tp {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.tp a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.av {
+  background-color: #4CAF50;
+  color: black;
+}
+
+.tp .icon {
+  display: none;
+}
+
+.ddown {
+  float: left;
+  overflow: hidden;
+}
+
+.ddown .dbtn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 1px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.ddown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ddown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.tp a:hover, .ddown:hover .dbtn {
+  background-color: #555;
+  color: white;
+}
+
+.ddown-content a:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+.ddown:hover .ddown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .tp a:not(:first-child), .ddown .dbtn {
+    display: none;
+  }
+  .tp a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tp.responsive {position: relative;}
+  .tp.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .tp.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .tp.responsive .ddown {float: none;}
+  .tp.responsive .ddown-content {position: relative;}
+  .tp.responsive .ddown .dbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
